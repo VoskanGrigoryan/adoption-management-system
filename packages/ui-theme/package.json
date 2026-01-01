@@ -1,0 +1,17 @@
+{
+  "name": "@repo/ui-theme",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "files": ["dist"],
+  "peerDependencies": {
+    "@mantine/core": "*"
+  },
+  "devDependencies": {
+    "@mantine/core": "^7.7.0"
+  }
+}

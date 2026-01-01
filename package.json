@@ -1,6 +1,11 @@
 {
   "name": "adoption-management-system",
   "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,6 +20,11 @@
   "packageManager": "pnpm@10.26.2",
   "devDependencies": {
     "eslint": "^9.39.2",
-    "prettier": "^3.7.4"
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.17.8",
+    "@mantine/hooks": "^8.3.10"
   }
 }
