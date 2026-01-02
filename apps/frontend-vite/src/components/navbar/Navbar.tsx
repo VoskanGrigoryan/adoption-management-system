@@ -9,7 +9,7 @@ import {
   IconSettings,
 } from "@tabler/icons-react";
 import { Code, Group } from "@mantine/core";
-import classes from "./NavbarSimpleColored.module.css";
+import classes from "./Navbar.module.css";
 
 const data = [
   { link: "", label: "Mascotas", icon: IconDog },

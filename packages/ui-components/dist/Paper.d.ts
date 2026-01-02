@@ -1,5 +1,8 @@
 import React from "react";
 import { PaperProps } from "@mantine/core";
-export declare const Paper: React.FC<PaperProps>;
+interface PaperComponentProps extends PaperProps {
+    children?: React.ReactNode;
+}
+export declare const Paper: ({ children, ...props }: PaperComponentProps) => import("react/jsx-runtime").JSX.Element;
 export default Paper;
 //# sourceMappingURL=Paper.d.ts.map

@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "tsc -b",
-    "build:watch": "tsc -b --watch"
+    "dev": "tsc -b --watch"
   },
   "peerDependencies": {
     "@mantine/core": "^7",

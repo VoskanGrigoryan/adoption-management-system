@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarSimpleColored from "../navbar/NavbarSimpleColored";
+import NavbarSimpleColored from "../navbar/Navbar";
 import classes from "./Layout.module.css";
 
 type LayoutProps = {
@@ -13,10 +13,6 @@ export default function Layout({ children }: LayoutProps) {
         <NavbarSimpleColored />
       </aside>
       <div className={classes.content}>
-        <div className={classes.topbar}>
-          <div>Backoffice</div>
-          <div>Actions</div>
-        </div>
         <main>{children}</main>
       </div>
     </div>
