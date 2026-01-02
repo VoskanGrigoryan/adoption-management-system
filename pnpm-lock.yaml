@@ -14,6 +14,15 @@ importers:
       '@mantine/hooks':
         specifier: ^8.3.10
         version: 8.3.10(react@19.2.3)
+      '@tabler/icons-react':
+        specifier: ^2.47.0
+        version: 2.47.0(react@19.2.3)
+      '@types/react':
+        specifier: ^19.2.7
+        version: 19.2.7
+      '@types/react-dom':
+        specifier: ^19.2.3
+        version: 19.2.3(@types/react@19.2.7)
     devDependencies:
       eslint:
         specifier: ^9.39.2
@@ -115,6 +124,9 @@ importers:
 
   apps/frontend-next:
     dependencies:
+      '@repo/ui-components':
+        specifier: workspace:*
+        version: link:../../packages/ui-components
       '@repo/ui-theme':
         specifier: workspace:*
         version: link:../../packages/ui-theme
@@ -155,9 +167,15 @@ importers:
 
   apps/frontend-vite:
     dependencies:
+      '@repo/ui-components':
+        specifier: workspace:*
+        version: link:../../packages/ui-components
       '@repo/ui-theme':
         specifier: workspace:*
         version: link:../../packages/ui-theme
+      '@tabler/icons-react':
+        specifier: ^2.14.0
+        version: 2.47.0(react@19.2.3)
       react:
         specifier: ^19.2.0
         version: 19.2.3
@@ -201,6 +219,31 @@ importers:
       vite:
         specifier: ^7.2.4
         version: 7.3.0(@types/node@24.10.4)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)
+
+  packages/ui-components:
+    dependencies:
+      '@mantine/core':
+        specifier: ^7
+        version: 7.17.8(@mantine/hooks@8.3.10(react@19.2.3))(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@repo/ui-theme':
+        specifier: workspace:*
+        version: link:../ui-theme
+    devDependencies:
+      '@types/react':
+        specifier: ^19.2.7
+        version: 19.2.7
+      '@types/react-dom':
+        specifier: ^19.2.3
+        version: 19.2.3(@types/react@19.2.7)
+      react:
+        specifier: ^19.2.0
+        version: 19.2.3
+      react-dom:
+        specifier: ^19.2.0
+        version: 19.2.3(react@19.2.3)
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
 
   packages/ui-theme:
     devDependencies:
@@ -1385,6 +1428,14 @@ packages:
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
+
+  '@tabler/icons-react@2.47.0':
+    resolution: {integrity: sha512-iqly2FvCF/qUbgmvS8E40rVeYY7laltc5GUjRxQj59DuX0x/6CpKHTXt86YlI2whg4czvd/c8Ce8YR08uEku0g==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+
+  '@tabler/icons@2.47.0':
+    resolution: {integrity: sha512-4w5evLh+7FUUiA1GucvGj2ReX2TvOjEr4ejXdwL/bsjoSkof6r1gQmzqI+VHrE2CpJpB3al7bCTulOkFa/RcyA==}
 
   '@tailwindcss/node@4.1.18':
     resolution: {integrity: sha512-DoR7U1P7iYhw16qJ49fgXUlry1t4CpXeErJHnQ44JgTSKMaZUdf17cfn5mHchfJ4KRBZRFA/Coo+MUF5+gOaCQ==}
@@ -5749,6 +5800,14 @@ snapshots:
   '@swc/helpers@0.5.15':
     dependencies:
       tslib: 2.8.1
+
+  '@tabler/icons-react@2.47.0(react@19.2.3)':
+    dependencies:
+      '@tabler/icons': 2.47.0
+      prop-types: 15.8.1
+      react: 19.2.3
+
+  '@tabler/icons@2.47.0': {}
 
   '@tailwindcss/node@4.1.18':
     dependencies:

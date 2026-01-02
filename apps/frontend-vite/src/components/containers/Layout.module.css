@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  flex: 0 0 280px;
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 24px;
+  background: var(--mantine-color-dark-6);
+  color: var(--mantine-color-white, #fff);
+}
+
+.topbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  margin-bottom: 8px;
+}
