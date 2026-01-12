@@ -11,7 +11,7 @@ export const Paper = ({ children, ...props }: PaperComponentProps) => {
       {...props}
       styles={{
         root: {
-          backgroundColor: "var(--mantine-color-dark-7)",
+          backgroundColor: "var(--mantine-color-dark-6)",
           border: "1px solid var(--mantine-color-dark-5)",
         },
       }}
