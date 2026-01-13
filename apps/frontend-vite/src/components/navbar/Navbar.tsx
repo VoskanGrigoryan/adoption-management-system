@@ -40,12 +40,9 @@ export function NavbarSimpleColored() {
 
   return (
     <nav className={classes.navbar}>
-      <div className={classes.navbarMain}>
-       
-        {links}
-      </div>
+      <div className={classes.navbarMain}>{links}</div>
 
-      <div className={classes.footer}>
+      <div>
         <a
           href="#"
           className={classes.link}
