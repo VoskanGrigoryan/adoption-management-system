@@ -4,7 +4,7 @@
   padding: var(--mantine-spacing-md);
   display: flex;
   flex-direction: column;
-  background-color: var(--mantine-color-primary-filled, #373a40);
+  background-color: var(--mantine-color-dark-6, #373a40);
 }
 
 .navbarMain {
@@ -14,17 +14,19 @@
 .header {
   padding-bottom: var(--mantine-spacing-md);
   margin-bottom: calc(var(--mantine-spacing-md) * 1.5);
-  border-bottom: 1px solid var(--mantine-color-primary-7, rgba(255,255,255,0.06));
+  border-bottom: 1px solid
+    var(--mantine-color-primary-7, rgba(255, 255, 255, 0.06));
 }
 
 .footer {
   padding-top: var(--mantine-spacing-md);
   margin-top: var(--mantine-spacing-md);
-  border-top: 1px solid var(--mantine-color-primary-7, rgba(255,255,255,0.06));
+  border-top: 1px solid
+    var(--mantine-color-primary-7, rgba(255, 255, 255, 0.06));
 }
 
 .version {
-  background-color: var(--mantine-color-primary-7, rgba(255,255,255,0.06));
+  background-color: var(--mantine-color-primary-7, rgba(255, 255, 255, 0.06));
   color: var(--mantine-color-white, #fff);
   border-radius: 6px;
 }
@@ -39,15 +41,18 @@
   border-radius: var(--mantine-radius-sm);
   font-weight: 500;
   font-size: large;
-  transition: background-color 150ms ease, color 150ms ease;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
 }
 
 .link:hover {
-  background-color: var(--mantine-color-primary-7, rgba(255,255,255,0.06));
+  background-color: var(--mantine-color-primary-7, rgba(255, 255, 255, 0.06));
   color: var(--mantine-color-white, #fff);
 }
 
-.link[data-active="true"], .link[data-active="true"]:hover {
+.link[data-active="true"],
+.link[data-active="true"]:hover {
   box-shadow: var(--mantine-shadow-sm);
   background-color: var(--mantine-color-white, #fff);
   color: var(--mantine-color-primary-filled, #373a40);

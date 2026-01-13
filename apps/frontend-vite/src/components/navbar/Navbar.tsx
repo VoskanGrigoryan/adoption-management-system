@@ -8,7 +8,6 @@ import {
   IconLogout,
   IconSettings,
 } from "@tabler/icons-react";
-import { Code, Group } from "@mantine/core";
 import classes from "./Navbar.module.css";
 
 const data = [
@@ -42,12 +41,7 @@ export function NavbarSimpleColored() {
   return (
     <nav className={classes.navbar}>
       <div className={classes.navbarMain}>
-        <Group className={classes.header} justify="space-between">
-          <div style={{ fontWeight: 700, color: "white" }}>Backoffice</div>
-          <Code fw={700} className={classes.version}>
-            v0.0.1
-          </Code>
-        </Group>
+       
         {links}
       </div>
 

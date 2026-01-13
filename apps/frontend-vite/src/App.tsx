@@ -1,13 +1,19 @@
+import { Title } from "@mantine/core";
 import Layout from "./components/containers/Layout";
-import OverviewCards from "./components/ui/OverviewCArds";
+import RecentActivityTab from "./components/ui/RecentActivity";
+import OverviewCards from "./components/ui/OverviewCards";
+import QuickActions from "./components/ui/QuickActions";
 
 function App() {
   return (
     <Layout>
-      <h1>Dashboard</h1>
-      <>
-        <OverviewCards />
-      </>
+      <Title mb={12}>Panel de control</Title>
+      
+      <OverviewCards />
+
+      <RecentActivityTab />
+
+      <QuickActions />
     </Layout>
   );
 }
